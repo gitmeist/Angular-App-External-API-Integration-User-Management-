@@ -1,0 +1,16 @@
+<section class="card shadow">
+    <h3 class="card-header text-center">Producto: {{ miProducto.name }}</h3>
+    <ul class="list-group m-1">
+        <li class="list-group-item"><strong>ID:</strong> {{ miProducto._id }}</li>
+        <li class="list-group-item"><strong>Descripción:</strong> {{ miProducto.description }}</li>
+        <li class="list-group-item"><strong>Precio:</strong> {{ miProducto.price }}</li>
+        <li class="list-group-item"><strong>Categoría:</strong> {{ miProducto.category }}</li>
+        <li class="list-group-item">
+            <strong>Imagen:</strong>
+            <img [src]="miProducto.image" alt="Imagen de {{ miProducto.name }}" class="img-fluid" />
+        </li>
+        <li class="list-group-item"><strong>Activo:</strong> {{ miProducto.active }}</li>
+    </ul>
+    <!-- Botón para borrar el producto -->
+    <button (click)="eliminarProducto(miProducto._id)" class="btn btn-danger">Eliminar</button>
+</section>

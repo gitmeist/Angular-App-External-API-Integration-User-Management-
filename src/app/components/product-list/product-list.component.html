@@ -1,0 +1,19 @@
+<section class="container mt-3">
+    <h2>Mis productos: </h2>
+    <hr>
+
+    <div class="mt-3">
+        <h2>Aqui va el filtro</h2>
+
+    </div>
+
+    <div class="row g-2 mt-3">
+        @for (producto of arrProductos; track arrProductos) {
+            <app-product-card [miProducto]="producto"></app-product-card>
+        }@empty {
+            <h2>No hay productos</h2>
+        }
+       
+    </div>
+
+</section>
