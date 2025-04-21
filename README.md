@@ -1,3 +1,30 @@
+This project is a full Angular application that connects to an external REST API (https://peticiones.online/users) to perform complete CRUD operations (Create, Read, Update, Delete) on user data.
+
+It features:
+
+Dynamic routing and component-based architecture
+
+Use of Bootstrap for responsive UI design
+
+A home view with a user grid
+
+Detail view for individual users
+
+Form components for user creation and updates with validations
+
+Alerts and feedback messages for actions like delete or submission
+
+Modular code with Angular services and interfaces to handle HTTP requests
+
+The API used is for educational purposes, so responses are mock data. This project demonstrates frontend interaction with a backend API using Angular best practices.
+
+
+
+
+
+
+
+
 # MFPActividad03
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
